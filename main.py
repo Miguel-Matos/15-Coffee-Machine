@@ -16,7 +16,6 @@ def coffee_machine():
                 menu.resources["coffee"] -= menu.MENU[customer_request]["ingredients"]["coffee"]
                 money(customer_request)
                 menu.machine_balance += menu.MENU[customer_request]["cost"]
-                print(f"Balance is {menu.machine_balance}")
             elif menu.resources["water"] - menu.MENU[customer_request]["ingredients"]["water"] < 0 or menu.resources["coffee"] - menu.MENU[customer_request]["ingredients"]["coffee"] < 0:
                 if menu.resources["water"] - menu.MENU[customer_request]["ingredients"]["water"] < 0 and menu.resources["coffee"] - menu.MENU[customer_request]["ingredients"]["coffee"] < 0:
                     print(f"Not enough water")
