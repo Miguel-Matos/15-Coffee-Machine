@@ -59,7 +59,7 @@ def refill():
     menu.resources["water"] += 200
     menu.resources["milk"] += 100
     menu.resources["coffee"] += 50
-    print(f"Water: {menu.resources['water']}ml \nMilk: {menu.resources['milk']}ml \nCoffee: {menu.resources['coffee']}g")
+    #print(f"Water: {menu.resources['water']}ml \nMilk: {menu.resources['milk']}ml \nCoffee: {menu.resources['coffee']}g")
 
 def money(customer_order):
     machine_money = 0
